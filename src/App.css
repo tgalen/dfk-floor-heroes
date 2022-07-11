@@ -1,1 +1,30 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --text-secondary: #8e05c2;
+  --accent: #8e05c2;
+  --border: #85cfcb;
+  --form-bg: #fff;
+}
 
+[data-theme="Dark"] {
+  --background: #313131;
+  --text-primary: #6b778d;
+  --border: #414141;
+}
+
+.app {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.category-btn {
+  display: block;
+  width: 90%;
+  padding: 0.3%;
+  border: none;
+  outline: none;
+  text-align: left;
+  background-color: var(--border);
+  color: var(--text-primary);
+}
