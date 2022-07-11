@@ -1,3 +1,9 @@
 h1 {
   text-align: left;
 }
+
+h1 button {
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
+}
