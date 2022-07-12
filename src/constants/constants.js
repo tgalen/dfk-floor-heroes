@@ -1,3 +1,5 @@
+import { gql } from "@apollo/client/core";
+
 export const GET_FLOOR_HERO_PRICES = gql`
   query floorHeroPrices {
     gen0Hmy: heroes(
