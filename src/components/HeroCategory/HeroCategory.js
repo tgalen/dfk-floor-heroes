@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./HeroCategory.css";
 
-const HeroCategory = () => {
+const HeroCategory = ({ category }) => {
   const [hideContent, setHideContent] = useState(true);
 
   const toggleContent = () => {
@@ -10,7 +10,7 @@ const HeroCategory = () => {
   };
   return (
     <div>
-      <button onClick={toggleContent}>Category</button>
+      <button onClick={toggleContent}>{category}</button>
       <div
         className={hideContent ? "table-container-hidden" : "table-container"}
       >

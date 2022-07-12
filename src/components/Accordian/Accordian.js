@@ -47,8 +47,10 @@ const Accordian = () => {
 
   return (
     <div className="accordian">
-      {/* map each hero cat */}
-      <HeroCategory />
+      {floorHeroes &&
+        Object.keys(mergedFloorHeroCategories).map((category) => {
+          return <HeroCategory category={category} />;
+        })}
     </div>
   );
 };
