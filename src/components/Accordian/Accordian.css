@@ -1,0 +1,9 @@
+.accordian {
+  height: fit-content;
+  text-align: center;
+  padding: 1%;
+  background-color: var(--accent);
+  width: 90%;
+  margin: auto;
+  border-radius: 3px;
+}

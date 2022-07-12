@@ -2,7 +2,7 @@ import "./Header.css";
 
 const Header = ({ theme, setTheme }) => {
   const changeTheme = () => {
-    const newTheme = theme === "Light" ? "Dark" : "Light";
+    const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
 

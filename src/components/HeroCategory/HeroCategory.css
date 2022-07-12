@@ -1,0 +1,16 @@
+button {
+  width: 90%;
+  text-align: left;
+  border: none;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.table-container {
+  margin-left: 7%;
+  height: fit-content;
+}
+
+.table-container-hidden {
+  display: none;
+}

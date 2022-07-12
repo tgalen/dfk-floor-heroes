@@ -1,30 +1,23 @@
 :root {
-  --background: #ffffff;
+  --background: #f4f3f3;
   --text-primary: #000;
   --text-secondary: #8e05c2;
-  --accent: #8e05c2;
-  --border: #85cfcb;
+  --accent: #dfdfdf;
+  --border: #f4f3f3;
   --form-bg: #fff;
 }
 
-[data-theme="Dark"] {
-  --background: #313131;
-  --text-primary: #6b778d;
+[data-theme="dark"] {
+  --background: #26282b;
+  --text-primary: #8787a3;
+  --accent: #353941;
   --border: #414141;
 }
 
 .app {
   background-color: var(--background);
   color: var(--text-primary);
-}
-
-.category-btn {
-  display: block;
-  width: 90%;
-  padding: 0.3%;
-  border: none;
-  outline: none;
-  text-align: left;
-  background-color: var(--border);
-  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  font-size: 100%;
 }

@@ -1,9 +1,42 @@
 h1 {
   text-align: left;
+  margin: 0;
+  padding: 2%;
+  font-size: 3em;
 }
 
 h1 button {
   float: right;
   margin-right: 2%;
   margin-top: 1%;
+  width: 3em;
+  height: 3em;
+  border: 1px solid var(--accent);
+}
+
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  h1 {
+    font-size: 2em;
+  }
+  h1 button {
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h1 button {
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    width: 2em;
+    height: 2em;
+  }
 }
