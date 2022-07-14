@@ -1103,3 +1103,33 @@ export const GET_FLOOR_HERO_PRICES = gql`
     luckGrowthP
   }
 `;
+
+export const HERO_CATEGORY_DISPLAY_NAME = {
+  gen0: "Gen 0",
+  mythicCommon: "Mythic Common",
+  mythicAdvanced: "Mythic Advanced",
+  mythicElite: "Mythic Elite",
+  legendaryCommon: "Legendary Common",
+  legendaryAdvanced: "Legendary Advanced",
+  legendaryElite: "Legendary ELite",
+  rareCommon: "Rare Common",
+  rareAdvanced: "Rare Advanced",
+  rareElite: "Rare Elite",
+  tentengen1CommonBasic: "10/10 Common Basic",
+  tentengen1UncommonBasic: "10/10 Uncommon Basic",
+  tentengen1RareBasic: "10/10 Rare Basic",
+  tentengen1LegendaryBasic: "10/10 Legendary Basic",
+  tentengen1MythicBasic: "10/10 Mythic Basic",
+  fivefivegen1CommonAdvanced: "5/5 Gen 1 Common Advanced",
+  fivefivegen1UncommonAdvanced: "5/5 Gen 1 Uncommon Advanced",
+  fivefivegen1RareAdvanced: "5/5 Gen 1 Rare Advanced",
+  fivefivegen1LegendaryAdvanced: "5/5 Gen 1 Legendary Advanced",
+  fivefivegen1MythicAdvanced: "5/5 Gen 1 Mythic Advanced",
+  threethreeCommonElite: "3/3 Common Elite",
+  threethreeUncommonElite: "3/3 Uncommon Elite",
+  threethreeRareElite: "3/3 Rare Elite",
+  threethreeLegendaryElite: "3/3 Legendary Elite",
+  threethreeMythicElite: "3/3 Mythic Elite",
+  dreadknight: "Dreadknight",
+  completeFloor: "Complete Floor",
+};
