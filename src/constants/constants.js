@@ -1133,3 +1133,5 @@ export const HERO_CATEGORY_DISPLAY_NAME = {
   dreadknight: "Dreadknight",
   completeFloor: "Complete Floor",
 };
+
+export const PRICE_MODIFIER = 1000000000000000000;

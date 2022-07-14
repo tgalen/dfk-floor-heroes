@@ -6,11 +6,11 @@ button {
   color: var(--text-primary);
 }
 
-.table-container {
+.content-container {
   margin-left: 7%;
   height: fit-content;
 }
 
-.table-container-hidden {
+.content-container-hidden {
   display: none;
 }

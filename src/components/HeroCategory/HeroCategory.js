@@ -1,38 +1,45 @@
 import { useState } from "react";
 
 import { HERO_CATEGORY_DISPLAY_NAME } from "../../constants/constants";
+import FloorHeroTableData from "../FloorHeroTableData/FloorHeroTableData";
+import NoHeroData from "../NoHeroData/NoHeroData";
 
 import "./HeroCategory.css";
 
-const HeroCategory = ({ category }) => {
+const HeroCategory = ({ category, floorHeroes }) => {
   const [hideContent, setHideContent] = useState(true);
 
   const toggleContent = () => {
     setHideContent(!hideContent);
   };
+
   return (
     <div>
       <button onClick={toggleContent}>
         {HERO_CATEGORY_DISPLAY_NAME[category]}
       </button>
+      {floorHeroes[category].length === 0 && <NoHeroData />}
       <div
-        className={hideContent ? "table-container-hidden" : "table-container"}
+        className={
+          hideContent ? "content-container-hidden" : "content-container"
+        }
       >
-        <table className="category-table">
+        <table>
           <thead>
             <tr>
-              <th>Price</th>
+              <th>Price JEWEL</th>
+              <th>Price CRYSTAL</th>
               <th>ID</th>
               <th>Chain</th>
+              <th>Main</th>
+              <th>Rarity</th>
+              <th>Gen</th>
+              <th>Summons</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>5</td>
-              <td>444444</td>
-              <td>DFK</td>
-            </tr>
-          </tbody>
+          {floorHeroes[category].map((hero) => {
+            return <FloorHeroTableData hero={hero} />;
+          })}
         </table>
       </div>
     </div>

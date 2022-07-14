@@ -32,11 +32,13 @@ const Accordian = () => {
   if (loading) return <div>Loading</div>;
   if (error) return <div>Error</div>;
 
+  floorHeroes && console.log(floorHeroes);
+
   return (
     <div className="accordian">
       {floorHeroes &&
         Object.keys(floorHeroes).map((category) => {
-          return <HeroCategory category={category} />;
+          return <HeroCategory category={category} floorHeroes={floorHeroes} />;
         })}
     </div>
   );

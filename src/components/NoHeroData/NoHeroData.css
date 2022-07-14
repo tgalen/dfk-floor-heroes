@@ -1,0 +1,6 @@
+.noHeroData {
+  width: 90%;
+  background-color: var(--error);
+  margin-left: 7%;
+  padding: 0.5%;
+}

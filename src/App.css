@@ -5,6 +5,7 @@
   --accent: #dfdfdf;
   --border: #f4f3f3;
   --form-bg: #fff;
+  --error: red;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --text-primary: #8787a3;
   --accent: #353941;
   --border: #414141;
+  --error: #950101;
 }
 
 .app {
