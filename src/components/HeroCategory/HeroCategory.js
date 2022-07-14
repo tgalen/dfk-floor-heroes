@@ -18,29 +18,34 @@ const HeroCategory = ({ category, floorHeroes }) => {
       <button onClick={toggleContent}>
         {HERO_CATEGORY_DISPLAY_NAME[category]}
       </button>
-      {floorHeroes[category].length === 0 && <NoHeroData />}
       <div
         className={
           hideContent ? "content-container-hidden" : "content-container"
         }
       >
-        <table>
-          <thead>
-            <tr>
-              <th>Price JEWEL</th>
-              <th>Price CRYSTAL</th>
-              <th>ID</th>
-              <th>Chain</th>
-              <th>Main</th>
-              <th>Rarity</th>
-              <th>Gen</th>
-              <th>Summons</th>
-            </tr>
-          </thead>
-          {floorHeroes[category].map((hero) => {
-            return <FloorHeroTableData hero={hero} />;
-          })}
-        </table>
+        {floorHeroes[category].length === 0 ? (
+          <NoHeroData />
+        ) : (
+          <table className="category-table">
+            <thead>
+              <tr>
+                <th>Price JEWEL</th>
+                <th>Price CRYSTAL</th>
+                <th>ID</th>
+                <th>Chain</th>
+                <th>Main</th>
+                <th>Rarity</th>
+                <th>Gen</th>
+                <th>Summons</th>
+              </tr>
+            </thead>
+            <tbody>
+              {floorHeroes[category].map((hero) => {
+                return <FloorHeroTableData key={hero.id} hero={hero} />;
+              })}
+            </tbody>
+          </table>
+        )}
       </div>
     </div>
   );

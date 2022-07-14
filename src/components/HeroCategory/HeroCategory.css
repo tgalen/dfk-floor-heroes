@@ -14,3 +14,15 @@ button {
 .content-container-hidden {
   display: none;
 }
+
+.category-table {
+  width: 90%;
+}
+
+/* .category-table tr:nth-of-type(odd) {
+  background-color: var(--accent);
+} */
+
+tr:nth-of-type(odd) {
+  background-color: var(--text-secondary);
+}

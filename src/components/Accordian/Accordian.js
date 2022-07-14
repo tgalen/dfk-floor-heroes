@@ -38,7 +38,13 @@ const Accordian = () => {
     <div className="accordian">
       {floorHeroes &&
         Object.keys(floorHeroes).map((category) => {
-          return <HeroCategory category={category} floorHeroes={floorHeroes} />;
+          return (
+            <HeroCategory
+              key={category}
+              category={category}
+              floorHeroes={floorHeroes}
+            />
+          );
         })}
     </div>
   );
