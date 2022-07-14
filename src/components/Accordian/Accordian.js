@@ -7,48 +7,35 @@ import "./Accordian.css";
 const Accordian = () => {
   const [floorHeroes, setFloorHeroes] = useState(null);
   const { loading, error, data } = useQuery(GET_FLOOR_HERO_PRICES);
-  const mergedFloorHeroCategories = {};
+
   useEffect(() => {
+    const mergeFloorHeroCategoriesFromAllChains = (queryData) => {
+      const mergedCategories = {};
+      Object.keys(queryData).forEach((category) => {
+        let categoryWithOutChain = category.slice(0, -3);
+
+        if (mergedCategories[categoryWithOutChain]) {
+          mergedCategories[categoryWithOutChain] = mergedCategories[
+            categoryWithOutChain
+          ].concat(queryData[category]);
+        } else {
+          mergedCategories[categoryWithOutChain] = data[category];
+        }
+      });
+      return mergedCategories;
+    };
     if (data) {
-      setFloorHeroes(data);
+      setFloorHeroes(mergeFloorHeroCategoriesFromAllChains(data));
     }
   }, [data]);
-
-  floorHeroes &&
-    Object.keys(floorHeroes).forEach((category) => {
-      let mergedCategory = category.slice(0, -3);
-      if (mergedFloorHeroCategories[mergedCategory]) {
-        mergedFloorHeroCategories[mergedCategory] = mergedFloorHeroCategories[
-          mergedCategory
-        ].concat(floorHeroes[category]);
-      } else {
-        mergedFloorHeroCategories[mergedCategory] = floorHeroes[category];
-      }
-    });
-
-  floorHeroes && console.log(mergedFloorHeroCategories);
-
-  // floorHeroes &&
-  // Object.keys(floorHeroes).forEach((category) => {
-  //   let allChainCategory = category.slice(0, -3);
-  //   if (floorHeroesFromEachChain[allChainCategory]) {
-  //     floorHeroesFromEachChain[allChainCategory] = floorHeroesFromEachChain[
-  //       allChainCategory
-  //     ].concat(floorHeroes[category]);
-  //   } else {
-  //     floorHeroesFromEachChain[allChainCategory] = floorHeroes[category];
-  //   }
-  // });
 
   if (loading) return <div>Loading</div>;
   if (error) return <div>Error</div>;
 
-  floorHeroes && console.log(floorHeroes);
-
   return (
     <div className="accordian">
       {floorHeroes &&
-        Object.keys(mergedFloorHeroCategories).map((category) => {
+        Object.keys(floorHeroes).map((category) => {
           return <HeroCategory category={category} />;
         })}
     </div>
