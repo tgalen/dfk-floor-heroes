@@ -19,9 +19,10 @@ button {
   width: 90%;
 }
 
-/* .category-table tr:nth-of-type(odd) {
-  background-color: var(--accent);
-} */
+th {
+  background-color: var(--text-primary);
+  color: var(--accent);
+}
 
 tr:nth-of-type(odd) {
   background-color: var(--text-secondary);

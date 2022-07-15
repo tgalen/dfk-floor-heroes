@@ -1,8 +1,9 @@
 :root {
   --background: #f4f3f3;
-  --text-primary: #000;
-  --text-secondary: #8e05c2;
-  --accent: #dfdfdf;
+  --secondary-background: #dfdfdf;
+  --text-primary: black;
+  --text-secondary: #eeeeee;
+  --accent: white;
   --border: #f4f3f3;
   --form-bg: #fff;
   --error: red;
@@ -10,8 +11,10 @@
 
 [data-theme="dark"] {
   --background: #26282b;
-  --text-primary: #8787a3;
-  --text-secondary: #eeeeee;
+  --secondary-background: #353941;
+  --text-primary: white;
+  --table-header: ;
+  --text-secondary: gray;
   --accent: #353941;
   --border: #414141;
   --error: #950101;
