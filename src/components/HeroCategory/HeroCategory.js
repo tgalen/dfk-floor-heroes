@@ -4,6 +4,9 @@ import { HERO_CATEGORY_DISPLAY_NAME } from "../../constants/constants";
 import FloorHeroTableData from "../FloorHeroTableData/FloorHeroTableData";
 import NoHeroData from "../NoHeroData/NoHeroData";
 
+import JEWEL_ICON from "../../assets/jewel.png";
+import CRYSTAL_ICON from "../../assets/crystal.png";
+
 import "./HeroCategory.css";
 
 const HeroCategory = ({ category, floorHeroes }) => {
@@ -29,8 +32,22 @@ const HeroCategory = ({ category, floorHeroes }) => {
           <table className="category-table">
             <thead>
               <tr>
-                <th>Price JEWEL</th>
-                <th>Price CRYSTAL</th>
+                <th>
+                  <img
+                    alt="Jewel Icon"
+                    height="20px"
+                    width="20px"
+                    src={JEWEL_ICON}
+                  />
+                </th>
+                <th>
+                  <img
+                    alt="Crystal Icon"
+                    height="20px"
+                    width="20px"
+                    src={CRYSTAL_ICON}
+                  />
+                </th>
                 <th>ID</th>
                 <th>Chain</th>
                 <th>Main</th>
