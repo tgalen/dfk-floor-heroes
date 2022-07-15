@@ -11,7 +11,7 @@ h1 button {
   margin-top: 1%;
   width: 3em;
   height: 3em;
-  border: 1px solid var(--accent);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 501px) and (max-width: 850px) {
