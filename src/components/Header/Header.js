@@ -8,7 +8,14 @@ const Header = ({ theme, setTheme }) => {
 
   return (
     <h1>
-      DFK Floor Heroes<button onClick={changeTheme}>L/D</button>
+      DFK Floor Heroes
+      <button onClick={changeTheme}>
+        {theme === "light" ? (
+          <i class="fa-solid fa-toggle-on"></i>
+        ) : (
+          <i class="fa-solid fa-toggle-off"></i>
+        )}
+      </button>
     </h1>
   );
 };
