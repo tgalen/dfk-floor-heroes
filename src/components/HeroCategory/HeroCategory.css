@@ -27,3 +27,67 @@ th {
 tr:nth-of-type(odd) {
   background-color: var(--text-secondary);
 }
+
+@media screen and (max-width: 800px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Price (JEWEL)";
+  }
+  td:nth-of-type(2):before {
+    content: "Price (CRYSTAL)";
+  }
+  td:nth-of-type(3):before {
+    content: "ID";
+  }
+  td:nth-of-type(4):before {
+    content: "Chain";
+  }
+  td:nth-of-type(5):before {
+    content: "Main";
+  }
+  td:nth-of-type(6):before {
+    content: "Rarity";
+  }
+  td:nth-of-type(7):before {
+    content: "Gen";
+  }
+  td:nth-of-type(8):before {
+    content: "Summons";
+  }
+}
