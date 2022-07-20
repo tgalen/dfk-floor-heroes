@@ -68,6 +68,7 @@ const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
                 <th>Rarity</th>
                 <th>Gen</th>
                 <th>Summons</th>
+                <th>Profession</th>
               </tr>
             </thead>
             <tbody>
