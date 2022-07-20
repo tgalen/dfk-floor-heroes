@@ -4,7 +4,8 @@ import CRYSTAL_ICON from "../../assets/crystal.png";
 import "./TokenConversion.css";
 
 const TokenConversion = ({ crystalJewelPair }) => {
-  const convertCrystalToJewel = (1 / crystalJewelPair.priceNative).toFixed(3);
+  const convertCrystalToJewel =
+    crystalJewelPair && (1 / crystalJewelPair.priceNative).toFixed(3);
 
   return (
     <h5>

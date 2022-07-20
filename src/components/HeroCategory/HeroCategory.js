@@ -9,7 +9,7 @@ import CRYSTAL_ICON from "../../assets/crystal.png";
 
 import "./HeroCategory.css";
 
-const HeroCategory = ({ category, floorHeroes }) => {
+const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
   const [hideContent, setHideContent] = useState(true);
 
   const toggleContent = () => {
@@ -58,7 +58,13 @@ const HeroCategory = ({ category, floorHeroes }) => {
             </thead>
             <tbody>
               {floorHeroes[category].map((hero) => {
-                return <FloorHeroTableData key={hero.id} hero={hero} />;
+                return (
+                  <FloorHeroTableData
+                    key={hero.id}
+                    hero={hero}
+                    crystalJewelPair={crystalJewelPair}
+                  />
+                );
               })}
             </tbody>
           </table>

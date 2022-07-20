@@ -4,7 +4,7 @@ import { GET_FLOOR_HERO_PRICES } from "../../constants/constants";
 import HeroCategory from "../HeroCategory/HeroCategory";
 import "./Accordian.css";
 
-const Accordian = () => {
+const Accordian = ({ crystalJewelPair }) => {
   const [floorHeroes, setFloorHeroes] = useState(null);
   const { loading, error, data } = useQuery(GET_FLOOR_HERO_PRICES);
 
@@ -43,6 +43,7 @@ const Accordian = () => {
               key={category}
               category={category}
               floorHeroes={floorHeroes}
+              crystalJewelPair={crystalJewelPair}
             />
           );
         })}
