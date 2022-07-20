@@ -1135,3 +1135,6 @@ export const HERO_CATEGORY_DISPLAY_NAME = {
 };
 
 export const PRICE_MODIFIER = 1000000000000000000;
+
+export const CRYSTAL_JEWEL_PAIR_ENDPOINT_URL =
+  "https://api.dexscreener.com/latest/dex/pairs/avalanchedfk/0x48658e69d741024b4686c8f7b236d3f1d291f386";
