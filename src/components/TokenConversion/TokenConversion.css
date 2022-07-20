@@ -1,6 +1,8 @@
 h5 {
   width: 100%;
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 h5 img {

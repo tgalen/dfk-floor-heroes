@@ -28,7 +28,11 @@ const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
       <td>{hero.mainClass}</td>
       <td>
         {" "}
-        <img src={RARITY_ICON[hero.rarity]} alt={RARITY_ICON[hero.rarity]} />
+        <img
+          src={RARITY_ICON[hero.rarity]}
+          alt={RARITY_ICON[hero.rarity]}
+          className="rarity-icon"
+        />
       </td>
       <td>{hero.generation}</td>
       <td>
