@@ -1,5 +1,9 @@
 import "./FloorHeroTableData.css";
-import { PRICE_MODIFIER, RENDER_CHAIN_ICON } from "../../constants/constants";
+import {
+  PRICE_MODIFIER,
+  CHAIN_ICON,
+  RARITY_ICON,
+} from "../../constants/constants";
 
 const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
   const price = (parseInt(hero.salePrice) / PRICE_MODIFIER).toFixed(2);
@@ -16,13 +20,16 @@ const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
       <td>{hero.id}</td>
       <td>
         <img
-          src={RENDER_CHAIN_ICON[hero.network]}
+          src={CHAIN_ICON[hero.network]}
           alt={hero.network}
           className="chain-icon"
         />
       </td>
       <td>{hero.mainClass}</td>
-      <td>{hero.rarity}</td>
+      <td>
+        {" "}
+        <img src={RARITY_ICON[hero.rarity]} />
+      </td>
       <td>{hero.generation}</td>
       <td>
         {hero.summonsRemaining} / {hero.maxSummons}

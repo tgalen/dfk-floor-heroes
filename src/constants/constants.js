@@ -2,6 +2,11 @@ import { gql } from "@apollo/client/core";
 
 import DFK_CHAIN_ICON from "../assets/dfk.webp";
 import HARMONY_CHAIN_ICON from "../assets/harmony.webp";
+import LEGENDARY from "../assets/legendary.png";
+import COMMON from "../assets/common.png";
+import RARE from "../assets/rare.png";
+import UNCOMMON from "../assets/uncommon.png";
+import MYTHIC from "../assets/mythic.png";
 
 export const GET_FLOOR_HERO_PRICES = gql`
   query floorHeroPrices {
@@ -1142,7 +1147,15 @@ export const PRICE_MODIFIER = 1000000000000000000;
 export const CRYSTAL_JEWEL_PAIR_ENDPOINT_URL =
   "https://api.dexscreener.com/latest/dex/pairs/avalanchedfk/0x48658e69d741024b4686c8f7b236d3f1d291f386";
 
-export const RENDER_CHAIN_ICON = {
+export const CHAIN_ICON = {
   dfk: DFK_CHAIN_ICON,
   hmy: HARMONY_CHAIN_ICON,
+};
+
+export const RARITY_ICON = {
+  4: MYTHIC,
+  3: LEGENDARY,
+  2: RARE,
+  1: UNCOMMON,
+  0: COMMON,
 };
