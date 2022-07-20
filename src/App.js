@@ -7,7 +7,9 @@ import "./App.css";
 import { CRYSTAL_JEWEL_PAIR_ENDPOINT_URL } from "./constants/constants";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(
+    JSON.parse(localStorage.getItem("displayMode")) || "light"
+  );
   const [crystalJewelPair, setCrystalJewelPair] = useState(null);
 
   useEffect(() => {
