@@ -1,0 +1,11 @@
+.chain-icon {
+  height: 25%;
+  width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .chain-icon {
+    height: 15%;
+    width: 15%;
+  }
+}

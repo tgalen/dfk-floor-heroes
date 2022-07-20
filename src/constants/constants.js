@@ -1,5 +1,8 @@
 import { gql } from "@apollo/client/core";
 
+import DFK_CHAIN_ICON from "../assets/dfk.webp";
+import HARMONY_CHAIN_ICON from "../assets/harmony.webp";
+
 export const GET_FLOOR_HERO_PRICES = gql`
   query floorHeroPrices {
     gen0Hmy: heroes(
@@ -1138,3 +1141,8 @@ export const PRICE_MODIFIER = 1000000000000000000;
 
 export const CRYSTAL_JEWEL_PAIR_ENDPOINT_URL =
   "https://api.dexscreener.com/latest/dex/pairs/avalanchedfk/0x48658e69d741024b4686c8f7b236d3f1d291f386";
+
+export const RENDER_CHAIN_ICON = {
+  dfk: DFK_CHAIN_ICON,
+  hmy: HARMONY_CHAIN_ICON,
+};
