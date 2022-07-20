@@ -38,6 +38,7 @@ const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
       <td>
         {hero.summonsRemaining} / {hero.maxSummons}
       </td>
+      <td>{hero.profession}</td>
     </tr>
   );
 };

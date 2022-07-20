@@ -1119,7 +1119,7 @@ export const HERO_CATEGORY_DISPLAY_NAME = {
   mythicElite: "Mythic Elite",
   legendaryCommon: "Legendary Common",
   legendaryAdvanced: "Legendary Advanced",
-  legendaryElite: "Legendary ELite",
+  legendaryElite: "Legendary Elite",
   rareCommon: "Rare Common",
   rareAdvanced: "Rare Advanced",
   rareElite: "Rare Elite",
