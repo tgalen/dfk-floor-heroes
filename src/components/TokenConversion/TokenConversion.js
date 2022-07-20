@@ -9,9 +9,9 @@ const TokenConversion = ({ crystalJewelPair }) => {
 
   return (
     <h5>
-      1 <img src={JEWEL_ICON} alt="JEWEL" /> ={" "}
+      1 <img src={JEWEL_ICON} alt="JEWEL" className="token-icon" /> ={" "}
       {crystalJewelPair && convertCrystalToJewel}
-      <img src={CRYSTAL_ICON} alt="CRYSTAL" />
+      <img src={CRYSTAL_ICON} alt="CRYSTAL" className="token-icon" />
     </h5>
   );
 };

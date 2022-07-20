@@ -3,23 +3,38 @@ h5 {
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
+  font-size: 1rem;
 }
 
-h5 img {
-  height: 1%;
-  width: 1%;
+.token-icon {
+  height: 0.8%;
+  width: 0.8%;
+  margin-left: 2px;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 1000px) {
-  h5 img {
+@media (max-width: 1400px) {
+  .token-icon {
+    height: 1%;
+    width: 1%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .token-icon {
+    height: 1.5%;
+    width: 1.5%;
+  }
+}
+@media (max-width: 650px) {
+  .token-icon {
     height: 2%;
     width: 2%;
   }
 }
-
-@media screen and (max-width: 500px) {
-  h5 img {
-    height: 3%;
-    width: 3%;
+@media (max-width: 525px) {
+  .token-icon {
+    height: 2.5%;
+    width: 2.5%;
   }
 }
