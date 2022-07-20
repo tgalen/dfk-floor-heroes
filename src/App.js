@@ -8,12 +8,14 @@ import { CRYSTAL_JEWEL_PAIR_ENDPOINT_URL } from "./constants/constants";
 
 function App() {
   const [theme, setTheme] = useState("light");
-  const [jewelToCrystalRatio, setJewelToCrystalRatio] = useState(null);
+  const [crystalJewelPair, setCrystalJewelPair] = useState(null);
 
   useEffect(() => {
     const getCrystalJewelPair = async () => {
-      const crystalJewelPair = await fetch(CRYSTAL_JEWEL_PAIR_ENDPOINT_URL);
-      console.log(crystalJewelPair.json());
+      const response = await fetch(CRYSTAL_JEWEL_PAIR_ENDPOINT_URL);
+      const crystalJewelPairData = await response.json();
+      console.log(crystalJewelPairData);
+      setCrystalJewelPair(crystalJewelPairData.pair);
     };
     getCrystalJewelPair();
   }, []);
@@ -21,8 +23,8 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <Header theme={theme} setTheme={setTheme} />
-      <Accordian />
-      <TokenConversion />
+      <Accordian crystalJewelPair={crystalJewelPair} />
+      <TokenConversion crystalJewelPair={crystalJewelPair} />
     </div>
   );
 }

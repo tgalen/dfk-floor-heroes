@@ -3,13 +3,13 @@ h5 {
   text-align: center;
 }
 
-img {
+h5 img {
   height: 1%;
   width: 1%;
 }
 
 @media screen and (max-width: 1000px) {
-  img {
+  h5 img {
     height: 2%;
     width: 2%;
   }
