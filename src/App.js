@@ -14,7 +14,6 @@ function App() {
     const getCrystalJewelPair = async () => {
       const response = await fetch(CRYSTAL_JEWEL_PAIR_ENDPOINT_URL);
       const crystalJewelPairData = await response.json();
-      console.log(crystalJewelPairData);
       setCrystalJewelPair(crystalJewelPairData.pair);
     };
     getCrystalJewelPair();

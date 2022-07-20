@@ -11,9 +11,9 @@ const Header = ({ theme, setTheme }) => {
       DFK Floor Heroes
       <button onClick={changeTheme}>
         {theme === "light" ? (
-          <i class="fa-solid fa-toggle-on"></i>
+          <i className="fa-solid fa-toggle-on"></i>
         ) : (
-          <i class="fa-solid fa-toggle-off"></i>
+          <i className="fa-solid fa-toggle-off"></i>
         )}
       </button>
     </h1>

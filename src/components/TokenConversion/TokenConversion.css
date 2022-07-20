@@ -14,3 +14,10 @@ h5 img {
     width: 2%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  h5 img {
+    height: 3%;
+    width: 3%;
+  }
+}
