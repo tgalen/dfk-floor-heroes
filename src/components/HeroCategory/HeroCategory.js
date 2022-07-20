@@ -11,10 +11,24 @@ import "./HeroCategory.css";
 
 const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
   const [hideContent, setHideContent] = useState(true);
+  const CONVERSION_MULTIPLIER =
+    crystalJewelPair && Number(crystalJewelPair.priceNative);
 
   const toggleContent = () => {
     setHideContent(!hideContent);
   };
+
+  const categorySortedByPriceAscending =
+    floorHeroes &&
+    floorHeroes[category].sort((a, b) => {
+      let priceA =
+        a.network === "hmy" ? a.salePrice : a.salePrice * CONVERSION_MULTIPLIER;
+      let priceB =
+        b.network === "hmy" ? b.salePrice : b.salePrice * CONVERSION_MULTIPLIER;
+      return priceA - priceB;
+    });
+
+  floorHeroes && console.log(categorySortedByPriceAscending);
 
   return (
     <div>
@@ -57,7 +71,7 @@ const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
               </tr>
             </thead>
             <tbody>
-              {floorHeroes[category].map((hero) => {
+              {categorySortedByPriceAscending.map((hero) => {
                 return (
                   <FloorHeroTableData
                     key={hero.id}
