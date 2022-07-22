@@ -13,6 +13,10 @@ const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
   const CONVERT_JEWEL_TO_CRYSTAL = (price / CONVERSION_MULTIPLIER).toFixed(2);
   const CONVERT_CRYSTAL_TO_JEWEL = (price * CONVERSION_MULTIPLIER).toFixed(2);
 
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   return (
     <tr>
       <td>{hero.network === "dfk" ? CONVERT_CRYSTAL_TO_JEWEL : price}</td>
@@ -38,7 +42,7 @@ const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
       <td>
         {hero.summonsRemaining} / {hero.maxSummons}
       </td>
-      <td>{hero.profession}</td>
+      <td>{capitalizeFirstLetter(hero.profession)}</td>
     </tr>
   );
 };
