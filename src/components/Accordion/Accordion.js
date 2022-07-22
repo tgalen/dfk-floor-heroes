@@ -4,8 +4,9 @@ import { GET_FLOOR_HERO_PRICES } from "../../constants/constants";
 import HeroCategory from "../HeroCategory/HeroCategory";
 import "./Accordion.css";
 import { SpinnerCircular } from "spinners-react";
+import QueryError from "../QueryError/QueryError";
 
-const Accordian = ({ crystalJewelPair }) => {
+const Accordion = ({ crystalJewelPair }) => {
   const [floorHeroes, setFloorHeroes] = useState(null);
   const { loading, error, data } = useQuery(GET_FLOOR_HERO_PRICES);
 
@@ -36,7 +37,12 @@ const Accordian = ({ crystalJewelPair }) => {
         <SpinnerCircular style={{ color: "blue", size: "15%" }} />
       </div>
     );
-  if (error) return <div>Error</div>;
+  if (!error)
+    return (
+      <div className="accordion">
+        <QueryError />
+      </div>
+    );
 
   return (
     <div className="accordion">
@@ -55,4 +61,4 @@ const Accordian = ({ crystalJewelPair }) => {
   );
 };
 
-export default Accordian;
+export default Accordion;
