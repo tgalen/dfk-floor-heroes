@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import Header from "./components/Header/Header";
-import Accordian from "./components/Accordian/Accordian";
+import Accordion from "./components/Accordion/Accordion";
 import TokenConversion from "./components/TokenConversion/TokenConversion";
 import "./App.css";
 import { CRYSTAL_JEWEL_PAIR_ENDPOINT_URL } from "./constants/constants";
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <Header theme={theme} setTheme={setTheme} />
-      <Accordian crystalJewelPair={crystalJewelPair} />
+      <Accordion crystalJewelPair={crystalJewelPair} />
       <TokenConversion crystalJewelPair={crystalJewelPair} />
     </div>
   );

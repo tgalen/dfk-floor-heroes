@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useQuery } from "@apollo/client";
 import { GET_FLOOR_HERO_PRICES } from "../../constants/constants";
 import HeroCategory from "../HeroCategory/HeroCategory";
-import "./Accordian.css";
+import "./Accordion.css";
 import { SpinnerCircular } from "spinners-react";
 
 const Accordian = ({ crystalJewelPair }) => {
@@ -32,14 +32,14 @@ const Accordian = ({ crystalJewelPair }) => {
 
   if (loading)
     return (
-      <div className="accordian">
+      <div className="accordion">
         <SpinnerCircular style={{ color: "blue", size: "15%" }} />
       </div>
     );
   if (error) return <div>Error</div>;
 
   return (
-    <div className="accordian">
+    <div className="accordion">
       {floorHeroes &&
         Object.keys(floorHeroes).map((category) => {
           return (
