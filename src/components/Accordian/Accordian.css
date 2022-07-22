@@ -10,6 +10,11 @@
   font-size: 0.75rem;
 }
 
+.spinner {
+  margin: auto;
+  text-align: center;
+}
+
 .accordian button {
   font-family: "Quattrocento Sans", sans-serif;
   margin: 2.5px;
