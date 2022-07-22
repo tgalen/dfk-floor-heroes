@@ -37,7 +37,7 @@ const Accordion = ({ crystalJewelPair }) => {
         <SpinnerCircular style={{ color: "blue", size: "15%" }} />
       </div>
     );
-  if (!error)
+  if (error)
     return (
       <div className="accordion">
         <QueryError />
