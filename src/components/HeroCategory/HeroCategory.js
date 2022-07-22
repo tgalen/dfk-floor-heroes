@@ -28,8 +28,6 @@ const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
       return priceA - priceB;
     });
 
-  floorHeroes && console.log(categorySortedByPriceAscending);
-
   return (
     <div>
       <button onClick={toggleContent}>
