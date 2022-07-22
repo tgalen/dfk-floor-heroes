@@ -86,4 +86,7 @@ tr:nth-of-type(odd) {
   td:nth-of-type(8):before {
     content: "Summons";
   }
+  td:nth-of-type(9):before {
+    content: "Profession";
+  }
 }
