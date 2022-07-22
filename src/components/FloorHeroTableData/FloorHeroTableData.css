@@ -1,7 +1,7 @@
 .chain-icon,
 .rarity-icon {
-  height: 25%;
-  width: 25%;
+  height: 15%;
+  width: 15%;
 }
 
 @media screen and (max-width: 800px) {
