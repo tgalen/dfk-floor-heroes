@@ -32,6 +32,7 @@ const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
     <div>
       <button onClick={toggleContent}>
         {HERO_CATEGORY_DISPLAY_NAME[category]}
+        <i className={hideContent ? "arrow down" : "arrow up"} />
       </button>
       <div
         className={
