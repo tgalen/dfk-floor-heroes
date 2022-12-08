@@ -21,6 +21,7 @@ const FloorHeroTableData = ({ hero, crystalJewelPair }) => {
     <tr>
       <td>{hero.network === "dfk" ? CONVERT_CRYSTAL_TO_JEWEL : price}</td>
       <td>{hero.network === "hmy" ? CONVERT_JEWEL_TO_CRYSTAL : price}</td>
+      <td>{hero.network === "kla" ? CONVERT_JEWEL_TO_CRYSTAL : price}</td>
       <td>{hero.id}</td>
       <td>
         <img

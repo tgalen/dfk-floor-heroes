@@ -1,5 +1,6 @@
 import JEWEL_ICON from "../../assets/jewel.png";
 import CRYSTAL_ICON from "../../assets/crystal.png";
+import JADE_ICON from "../../assets/jade.png";
 
 import "./TokenConversion.css";
 

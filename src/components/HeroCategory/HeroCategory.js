@@ -6,6 +6,7 @@ import NoHeroData from "../NoHeroData/NoHeroData";
 
 import JEWEL_ICON from "../../assets/jewel.png";
 import CRYSTAL_ICON from "../../assets/crystal.png";
+import JADE_ICON from "../../assets/jade.png";
 
 import "./HeroCategory.css";
 
@@ -59,6 +60,14 @@ const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
                     height="20px"
                     width="20px"
                     src={CRYSTAL_ICON}
+                  />
+                </th>
+                <th>
+                  <img
+                    alt="Jade Icon"
+                    height="20px"
+                    width="20px"
+                    src={JADE_ICON}
                   />
                 </th>
                 <th>ID</th>
