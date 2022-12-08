@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Accordion from "./components/Accordion/Accordion";
 import TokenConversion from "./components/TokenConversion/TokenConversion";
 import "./App.css";
-import { CRYSTAL_JEWEL_PAIR_ENDPOINT_URL } from "./constants/constants";
+import { CRYSTAL_JEWEL_PAIR_ENDPOINT_URL, JEWEL_JADE_PAIR_ENDPOINT_URL } from "./constants/constants";
 
 function App() {
   const [theme, setTheme] = useState(
