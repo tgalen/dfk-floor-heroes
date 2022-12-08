@@ -66,6 +66,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 4
       salePrice_not: null
@@ -91,6 +93,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 4
       salePrice_not: null
@@ -116,6 +120,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 4
       salePrice_not: null
@@ -136,6 +142,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 4
       salePrice_not: null
@@ -156,6 +163,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 4
       salePrice_not: null
@@ -176,6 +184,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 4
       salePrice_not: null
@@ -190,7 +199,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 4
       salePrice_not: null
       network: "hmy"
@@ -204,7 +213,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 4
       salePrice_not: null
       network: "dfk"
@@ -218,7 +227,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 4
       salePrice_not: null
       network: "kla"
@@ -243,6 +252,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 3
       salePrice_not: null
@@ -268,6 +279,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 3
       salePrice_not: null
@@ -293,6 +306,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 3
       salePrice_not: null
@@ -313,6 +328,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 3
       salePrice_not: null
@@ -333,6 +349,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 3
       salePrice_not: null
@@ -353,6 +370,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 3
       salePrice_not: null
@@ -367,7 +385,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 3
       salePrice_not: null
       network: "hmy"
@@ -381,7 +399,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 3
       salePrice_not: null
       network: "dfk"
@@ -395,7 +413,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 3
       salePrice_not: null
       network: "kla"
@@ -420,6 +438,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 2
       salePrice_not: null
@@ -445,6 +465,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 2
       salePrice_not: null
@@ -470,6 +492,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 2
       salePrice_not: null
@@ -490,6 +514,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 2
       salePrice_not: null
@@ -510,6 +535,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 2
       salePrice_not: null
@@ -530,6 +556,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 2
       salePrice_not: null
@@ -544,7 +571,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 2
       salePrice_not: null
       network: "hmy"
@@ -558,7 +585,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 2
       salePrice_not: null
       network: "dfk"
@@ -572,7 +599,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 2
       salePrice_not: null
       network: "kla"
@@ -597,6 +624,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 0
       summonsRemaining_gte: 10
@@ -624,6 +653,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 0
       summonsRemaining_gte: 10
@@ -651,6 +682,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 0
       summonsRemaining_gte: 10
@@ -678,6 +711,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 1
       summonsRemaining_gte: 10
@@ -705,6 +740,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 1
       summonsRemaining_gte: 10
@@ -732,6 +769,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 1
       summonsRemaining_gte: 10
@@ -759,6 +798,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 2
       summonsRemaining_gte: 10
@@ -786,6 +827,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 2
       summonsRemaining_gte: 10
@@ -813,6 +856,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 2
       summonsRemaining_gte: 10
@@ -840,6 +885,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 3
       summonsRemaining_gte: 10
@@ -867,6 +914,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 3
       summonsRemaining_gte: 10
@@ -894,6 +943,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 3
       summonsRemaining_gte: 10
@@ -921,6 +972,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 4
       summonsRemaining_gte: 10
@@ -948,6 +1001,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 4
       summonsRemaining_gte: 10
@@ -975,6 +1030,8 @@ query floorHeroPrices {
         "Priest"
         "Berserker"
         "Seer"
+        "Legionnaire"
+        "Scholar"
       ]
       rarity: 4
       summonsRemaining_gte: 10
@@ -997,6 +1054,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 0
       summonsRemaining_gte: 5
@@ -1019,6 +1077,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 0
       summonsRemaining_gte: 5
@@ -1041,6 +1100,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 0
       summonsRemaining_gte: 5
@@ -1063,6 +1123,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 1
       summonsRemaining_gte: 5
@@ -1085,6 +1146,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 1
       summonsRemaining_gte: 5
@@ -1107,6 +1169,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 1
       summonsRemaining_gte: 5
@@ -1129,6 +1192,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 2
       summonsRemaining_gte: 5
@@ -1151,6 +1215,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 2
       summonsRemaining_gte: 5
@@ -1173,6 +1238,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 2
       summonsRemaining_gte: 5
@@ -1195,6 +1261,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 3
       summonsRemaining_gte: 5
@@ -1217,6 +1284,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 3
       summonsRemaining_gte: 5
@@ -1239,6 +1307,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 3
       summonsRemaining_gte: 5
@@ -1261,6 +1330,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 4
       summonsRemaining_gte: 5
@@ -1283,6 +1353,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 4
       summonsRemaining_gte: 5
@@ -1305,6 +1376,7 @@ query floorHeroPrices {
         "Paladin"
         "DarkKnight"
         "Shapeshifter"
+        "Bard"
       ]
       rarity: 4
       summonsRemaining_gte: 5
@@ -1321,7 +1393,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 0
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1336,7 +1408,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 0
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1351,7 +1423,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 0
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1366,7 +1438,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 1
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1381,7 +1453,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 1
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1396,7 +1468,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 1
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1411,7 +1483,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 2
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1426,7 +1498,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 2
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1441,7 +1513,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 2
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1456,7 +1528,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 3
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1471,7 +1543,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 3
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1486,7 +1558,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 3
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1501,7 +1573,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 4
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1516,7 +1588,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 4
       summonsRemaining_gte: 3
       salePrice_not: null
@@ -1531,7 +1603,7 @@ query floorHeroPrices {
     orderBy: salePrice
     orderDirection: asc
     where: {
-      mainClass_in: ["Dragoon", "Sage"]
+      mainClass_in: ["Dragoon", "Sage", "Spellbow"]
       rarity: 4
       summonsRemaining_gte: 3
       salePrice_not: null
