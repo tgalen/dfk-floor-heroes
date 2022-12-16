@@ -35,19 +35,19 @@ const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
 
   const pricesToDisplay = {
     hmy: {
-      dfk: CONVERT_JEWEL_TO_CRYSTAL,
-      kla: CONVERT_JEWEL_TO_JADE,
-      hmy: price,
+      jewel: price,
+      jade: CONVERT_JEWEL_TO_JADE,
+      crystal: CONVERT_JEWEL_TO_CRYSTAL,
     },
     dfk: {
-      hmy: CONVERT_CRYSTAL_TO_JEWEL,
-      kla: CONVERT_CRYSTAL_TO_JADE,
-      dfk: price,
+      jewel: CONVERT_CRYSTAL_TO_JEWEL,
+      jade: CONVERT_CRYSTAL_TO_JADE,
+      crystal: price,
     },
     kla: {
-      hmy: CONVERT_JADE_TO_JEWEL,
-      kla: price,
-      dfk: CONVERT_JADE_TO_CRYSTAL,
+      jewel: CONVERT_JADE_TO_JEWEL,
+      jade: price,
+      crystal: CONVERT_JADE_TO_CRYSTAL,
     },
   };
 
@@ -59,11 +59,11 @@ const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
 
   return (
     <tr>
-      <td>{pricesToDisplay[hero.network].hmy}</td>
+      <td>{pricesToDisplay[hero.network].jewel}</td>
       {/* <td>{hero.network === "dfk" ? CONVERT_CRYSTAL_TO_JEWEL : price}</td> */}
-      <td>{pricesToDisplay[hero.network].dfk}</td>
+      <td>{pricesToDisplay[hero.network].crystal}</td>
       {/* <td>{hero.network === "hmy" ? CONVERT_JEWEL_TO_CRYSTAL : price}</td> */}
-      <td>{pricesToDisplay[hero.network].kla}</td>
+      <td>{pricesToDisplay[hero.network].jade}</td>
       {/* <td>{hero.network === "kla" ? CONVERT_JEWEL_TO_CRYSTAL : price}</td> */}
       <td>{hero.id}</td>
       <td>
