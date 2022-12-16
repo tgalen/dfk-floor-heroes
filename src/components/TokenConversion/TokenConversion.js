@@ -13,12 +13,11 @@ const TokenConversion = ({ crystalJewelPair, jewelJadePair }) => {
 
   return (
     <h5>
-      1 <img src={JEWEL_ICON} alt="JEWEL" className="token-icon" /> ={" "}
+      <img src={JADE_ICON} alt="JADE" className="token-icon" />
+      {jewelJadePair && convertJewelToJade} = 1{" "}
+      <img src={JEWEL_ICON} alt="JEWEL" className="token-icon" /> ={" "}
       {crystalJewelPair && convertJewelToCrystal}
       <img src={CRYSTAL_ICON} alt="CRYSTAL" className="token-icon" />
-      1 <img src={JEWEL_ICON} alt="JEWEL" className="token-icon" /> ={" "}
-      {jewelJadePair && convertJewelToJade}{" "}
-      <img src={JADE_ICON} alt="JADE" className="token-icon" />
     </h5>
   );
 };

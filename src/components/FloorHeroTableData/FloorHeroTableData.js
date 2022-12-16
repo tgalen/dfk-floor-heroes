@@ -55,16 +55,11 @@ const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  // console.log(pricesToDisplay[hero.network].dfk);
-
   return (
     <tr>
       <td>{pricesToDisplay[hero.network].jewel}</td>
-      {/* <td>{hero.network === "dfk" ? CONVERT_CRYSTAL_TO_JEWEL : price}</td> */}
       <td>{pricesToDisplay[hero.network].crystal}</td>
-      {/* <td>{hero.network === "hmy" ? CONVERT_JEWEL_TO_CRYSTAL : price}</td> */}
       <td>{pricesToDisplay[hero.network].jade}</td>
-      {/* <td>{hero.network === "kla" ? CONVERT_JEWEL_TO_CRYSTAL : price}</td> */}
       <td>{hero.id}</td>
       <td>
         <img

@@ -15,8 +15,6 @@ function App() {
   );
   const [crystalJewelPair, setCrystalJewelPair] = useState(null);
   const [jewelJadePair, setJewelJadePair] = useState(null);
-  console.log(crystalJewelPair);
-  console.log(jewelJadePair);
 
   const getPairs = async () => {
     const responseCJ = await fetch(CRYSTAL_JEWEL_PAIR_ENDPOINT_URL);
@@ -25,7 +23,6 @@ function App() {
 
     const responseJJ = await fetch(JEWEL_JADE_PAIR_ENDPOINT_URL);
     const jewelJadePairData = await responseJJ.json();
-    console.log(jewelJadePairData);
     setJewelJadePair(jewelJadePairData.pair);
   };
 
