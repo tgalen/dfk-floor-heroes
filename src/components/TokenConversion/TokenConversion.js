@@ -8,7 +8,7 @@ const TokenConversion = ({ crystalJewelPair, jewelJadePair }) => {
   const convertJewelToCrystal =
     crystalJewelPair && (1 / crystalJewelPair.priceNative).toFixed(3);
 
-  const convertJewelToJAde =
+  const convertJewelToJade =
     jewelJadePair && (1 / jewelJadePair.priceNative).toFixed(3);
 
   return (
@@ -17,7 +17,7 @@ const TokenConversion = ({ crystalJewelPair, jewelJadePair }) => {
       {crystalJewelPair && convertJewelToCrystal}
       <img src={CRYSTAL_ICON} alt="CRYSTAL" className="token-icon" />
       1 <img src={JEWEL_ICON} alt="JEWEL" className="token-icon" /> ={" "}
-      {jewelJadePair && convertJewelToJAde}{" "}
+      {jewelJadePair && convertJewelToJade}{" "}
       <img src={JADE_ICON} alt="JADE" className="token-icon" />
     </h5>
   );

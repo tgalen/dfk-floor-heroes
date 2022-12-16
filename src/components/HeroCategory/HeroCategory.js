@@ -10,7 +10,12 @@ import JADE_ICON from "../../assets/jade.png";
 
 import "./HeroCategory.css";
 
-const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
+const HeroCategory = ({
+  category,
+  floorHeroes,
+  crystalJewelPair,
+  jewelJadePair,
+}) => {
   const [hideContent, setHideContent] = useState(true);
   const CONVERSION_MULTIPLIER =
     crystalJewelPair && Number(crystalJewelPair.priceNative);
@@ -86,6 +91,7 @@ const HeroCategory = ({ category, floorHeroes, crystalJewelPair }) => {
                     key={hero.id}
                     hero={hero}
                     crystalJewelPair={crystalJewelPair}
+                    jewelJadePair={jewelJadePair}
                   />
                 );
               })}

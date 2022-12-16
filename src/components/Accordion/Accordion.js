@@ -6,7 +6,7 @@ import "./Accordion.css";
 import { SpinnerCircular } from "spinners-react";
 import QueryError from "../QueryError/QueryError";
 
-const Accordion = ({ crystalJewelPair }) => {
+const Accordion = ({ crystalJewelPair, jewelJadePair }) => {
   const [floorHeroes, setFloorHeroes] = useState(null);
   const { loading, error, data } = useQuery(GET_FLOOR_HERO_PRICES);
 
@@ -54,6 +54,7 @@ const Accordion = ({ crystalJewelPair }) => {
               category={category}
               floorHeroes={floorHeroes}
               crystalJewelPair={crystalJewelPair}
+              jewelJadePair={jewelJadePair}
             />
           );
         })}
