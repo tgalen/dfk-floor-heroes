@@ -5,6 +5,7 @@ import {
   RARITY_ICON,
 } from "../../constants/constants";
 
+const { decodeRecessiveGeneAndNormalize } = require("../../constants/recessive-genes.js");
 const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
   const price = (parseInt(hero.salePrice) / PRICE_MODIFIER).toFixed(2);
   const CJ_CONVERSION_MULTIPLIER =
@@ -55,6 +56,12 @@ const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
+  const decodedGenes = decodeRecessiveGeneAndNormalize(hero.statGenes);
+  const [mSkip, mR1, mR2, mR3] = decodedGenes.mainClassGenes;
+  const [sSkip, sR1, sR2, sR3] = decodedGenes.subClassGenes;
+  //console.log(decodedGenes);
+  // console.log(mR1)
+
   return (
     <tr>
       <td>{pricesToDisplay[hero.network].jewel}</td>
@@ -69,6 +76,9 @@ const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
         />
       </td>
       <td>{hero.mainClass}</td>
+      <td>{capitalizeFirstLetter(mR1)}</td>
+      <td>{hero.subClass}</td>
+      <td>{capitalizeFirstLetter(sR1)}</td>
       <td>
         {" "}
         <img
