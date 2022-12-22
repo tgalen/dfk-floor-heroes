@@ -233,7 +233,7 @@ exports.actives = {
   25: 'E2: Second Wind',
   26: 'Elite3',
   27: 'Elite4',
-  28: 'T1: Resurrection',
+  28: 'Ex1: Resurrection',
   29: 'Transcendent2',
 };
 exports.passives = {
@@ -261,7 +261,7 @@ exports.passives = {
     25: 'E2: Last Stand',
     26: 'Elite3',
     27: 'Elite4',
-    28: 'T1: Second Life',
+    28: 'Ex1: Second Life',
     29: 'Transcendent2',
 };
 exports.passive1 = exports.passives;
