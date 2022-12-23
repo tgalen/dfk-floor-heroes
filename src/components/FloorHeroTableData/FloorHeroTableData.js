@@ -112,9 +112,9 @@ const FloorHeroTableData = ({ hero, crystalJewelPair, jewelJadePair }) => {
           className="chain-icon"
         />
       </td>
-      <td>{hero.mainClass}</td>
+      <td>{hero.mainClass === capitalizeFirstLetter(mainR1) ? '**' : ''}{hero.mainClass}</td>
       <td>{capitalizeFirstLetter(mainR1)}</td>
-      <td>{hero.subClass}</td>
+      <td>{hero.subClass === capitalizeFirstLetter(subR1) ? '**' : ''}{hero.subClass}</td>
       <td>{capitalizeFirstLetter(subR1)}</td>
       <td>
         {" "}
