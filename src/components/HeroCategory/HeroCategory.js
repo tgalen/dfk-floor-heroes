@@ -78,7 +78,14 @@ const HeroCategory = ({
                 <th>ID</th>
                 <th>Chain</th>
                 <th>Main</th>
+                <th>Main R1</th>
+                <th>Sub</th>
+                <th>Sub R1</th>
                 <th>Rarity</th>
+                <th>Active1</th>
+                <th>Active2</th>
+                <th>Passive1</th>
+                <th>Passive2</th>
                 <th>Gen</th>
                 <th>Summons</th>
                 <th>Profession</th>
