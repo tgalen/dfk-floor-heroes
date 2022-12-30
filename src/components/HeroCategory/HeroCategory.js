@@ -17,8 +17,11 @@ const HeroCategory = ({
   jewelJadePair,
 }) => {
   const [hideContent, setHideContent] = useState(true);
-  const CONVERSION_MULTIPLIER =
+  const CJ_CONVERSION_MULTIPLIER =
     crystalJewelPair && Number(crystalJewelPair.priceNative);
+
+  const JJ_CONVERSION_MULTIPLIER =
+    jewelJadePair && Number(jewelJadePair.priceNative);
 
   const toggleContent = () => {
     setHideContent(!hideContent);
@@ -28,9 +31,18 @@ const HeroCategory = ({
     floorHeroes &&
     floorHeroes[category].sort((a, b) => {
       let priceA =
-        a.network === "hmy" ? a.salePrice : a.salePrice * CONVERSION_MULTIPLIER;
+        a.network === "hmy"
+          ? a.salePrice
+          : a.network === "dfk"
+          ? a.salePrice * CJ_CONVERSION_MULTIPLIER
+          : a.salePrice * JJ_CONVERSION_MULTIPLIER;
       let priceB =
-        b.network === "hmy" ? b.salePrice : b.salePrice * CONVERSION_MULTIPLIER;
+        b.network === "hmy"
+          ? b.salePrice
+          : b.network === "dfk"
+          ? b.salePrice * CJ_CONVERSION_MULTIPLIER
+          : b.salePrice * JJ_CONVERSION_MULTIPLIER;
+      console.log(priceA);
       return priceA - priceB;
     });
 
