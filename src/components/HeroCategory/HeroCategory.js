@@ -42,7 +42,6 @@ const HeroCategory = ({
           : b.network === "dfk"
           ? b.salePrice * CJ_CONVERSION_MULTIPLIER
           : b.salePrice * JJ_CONVERSION_MULTIPLIER;
-      console.log(priceA);
       return priceA - priceB;
     });
 
